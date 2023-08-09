@@ -1,0 +1,17 @@
+﻿CardId,CardType,CardName,CardDesc,CardCost,CardTag,Rarity,CardPool,TargetCount,AttackCount,MainEffect,TriggerCondition,CostChangeCondition,AdditionalEffectCondition,AdditionalEffect
+1001,Attack,기본 공격(임시),피해를 10 준다,1,Attack,1,A,1,1,10,None,None,None,None
+1002,Attack,샤이닝 크로스,피해를 2번 10 준다,1,Attack,2,B,1,1,10,None,None,None,None
+1003,Attack,선제 공격,이번 턴 처음으로 사용하면 비용이 0이 된다 피해를 10 준다,1,Attack,1,C,1,1,10,None,FirstCard,None,None
+1004,Attack,신성한 빛,피해를 10 준다 피해를 받은 적에게 신성을 3 부여한다,1,Divine,2,B,1,1,10,None,None,None,Divine3
+1005,Attack,빛의 세례,모든 적에게 피해를 10 준다,1,Attack,1,B,0,1,10,None,None,None,None
+2001,Color,별부름,별을 부른다,1,Color,2,A,0,0,P1,None,None,None,None
+2002,Color,쌍성-상하,위 아래 칸에 별을 부른다,1,Color,2,A,0,0,UpDown,None,None,None,None
+2003,Color,쌍성-좌우,양 옆 칸에 별을 부른다,1,Color,2,A,0,0,LeftRight,None,None,None,None
+2004,Color,남십자성,상하좌우 칸에 별을 부른다,2,Color,2,C,0,0,P4,None,None,None,None
+2005,Color,키니 취향 별,별을 부른다 빙고를 완성하면 마나를 1 회복한다,1,Mana,2,C,0,0,P1,None,None,None,Mana1
+2006,Color,태초의 별,보드에 별이 없으면 이 카드의 비용이 0이 된다 별을 부른다,1,Color,1,B,0,0,P1,None,ColoredSpaceNotExists,None,None
+3001,Move,이동,1칸 이동한다/,1,,1,A,0,0,UDLR,None,None,None,None
+3002,Move,대각선 이동,대각선으로 1칸 이동한다/,1,,1,B,0,0,Diagonal ,None,None,None,None
+3003,Move,이동 또 이동,1칸 이동한다/ 사용 후 이 카드를 패로 되돌린다,1,,1,C,0,0,UDLR,None,None,Re,None
+3004,Move,키니 간식,"1칸 이동한다, 자신의 색칠된 칸으로 이동하면 마나를 1얻는다",1,,1,C,0,0,UDLR,None,None,Mana1,None
+3005,Move,식량 보급,"1칸 이동한다, 자신의 색칠된 칸으로 이동하면 체력을 1 회복한다",1,,1,B,0,0,UDLR,None,None,PlayerHpPlus20,None
